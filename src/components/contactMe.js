@@ -69,7 +69,7 @@ const ContactMe = () => {
   return (
     <div id="ContactMe" className="contactMeContainer">
       <Typewriter text={["Contact Me"]} />
-      <p className="subHeading">Send me a message!</p>
+      {/* <p className="subHeading">Send me a message!</p> */}
       <div style={{display: "flex", flexDirection: 'row'}}>
         <SocialMedia />
         <ContactForm />

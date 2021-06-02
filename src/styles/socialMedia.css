@@ -52,8 +52,8 @@
       #fec66d 100%
     );
 }
-.social-btns .btn.instagram > g {
-  fill: radial-gradient(
+.social-btns .btn.instagram  {
+  /* fill: radial-gradient(
       circle farthest-corner at 35% 90%,
       #fec564,
       transparent 50%
@@ -77,8 +77,9 @@
       #bc318f 30%,
       #e33f5f 50%,
       #f77638 70%,
-      #fec66d 100%
-    );
+      #fec66d 100% 
+    );*/
+    fill: rgb(136, 11, 105)
 }
 .social-btns .btn.github:before {
   background-color: #211f1f;
