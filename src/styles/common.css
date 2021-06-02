@@ -1,0 +1,72 @@
+/* -------------------------------------------------------------------------- */
+/*                              SinglePage Styles                             */
+/* -------------------------------------------------------------------------- */
+
+section {
+  scroll-snap-align: start;
+}
+
+section #roadmap {
+  scroll-snap-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         Header & Footer Backgrounds                        */
+/* -------------------------------------------------------------------------- */
+.headerBg {
+  height: 0;
+  width: 0;
+  border-right: 85vw solid transparent;
+  border-top: 100vh solid #aaa0ff;
+}
+
+.footerBg {
+  height: 0;
+  width: 0;
+  float: right;
+  right: -20px;
+  border-left: 85vw solid transparent;
+  border-bottom: 80vh solid #aaa0ff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Typewriter                                 */
+/* -------------------------------------------------------------------------- */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+  font-size: 42px;
+  display: inline-block;
+  /* width: max-content; */
+  color: #4e4e4e;
+  font-weight: bold;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #4e4e4e; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 2.5s steps(60, end), blink-caret 0.9s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0.5;
+  }
+  to {
+    width: 25rem;
+    opacity: 1;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+    scale: 0;
+  }
+  50% {
+    border-color: #aaa0ff;
+    scale: 0.8;
+  }
+}

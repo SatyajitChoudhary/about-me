@@ -1,0 +1,20 @@
+.image-conatainer {
+  position: absolute;
+  left: 15vw;
+  top: 20vh;
+}
+
+.myPic {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border: 5px solid white;
+  border-radius: 150px;
+  transition: 0.4s;
+}
+
+.myPic:hover {
+  transform: scale(1.1);
+  border-color: #d0d0ff;
+  box-shadow: 2px 2px 6px #888888;
+}

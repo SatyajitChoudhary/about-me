@@ -1,0 +1,54 @@
+#upArrow {
+  width: 50px;
+  height: 50px;
+}
+
+.normal-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.normal-container:hover {
+  padding-bottom: 20px;
+  background-color: darkblue;
+}
+
+.onHover-container {
+  width: 100px;
+  height: 130px;
+  right: -20px;
+  background-color: white;
+  border-radius: 20% 10% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onHover-container span {
+  display: inline-block;
+  color: #aaa0ff;
+}
+
+.onHover-container #Back {
+  font-size: 20px;
+  font-weight: 600;
+  transform: rotate(-2deg);
+  margin: -1px;
+}
+
+.onHover-container #qus {
+  font-size: 45px;
+  font-weight: bold;
+  font-stretch: expanded;
+  transform: rotate(4deg);
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  color: #3a3a3a;
+}

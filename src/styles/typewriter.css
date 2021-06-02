@@ -1,0 +1,29 @@
+#typewriter {
+	text-align: left;
+}
+
+#typewriter #text {
+	display: inline-block;
+	vertical-align: middle;
+	color: rgba(22, 163, 64, 0.397);
+	letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+#typewriter #cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: rgba(5, 75, 11, 0.021);
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: rgba(5, 85, 18, 0.164); 
+	}
+}

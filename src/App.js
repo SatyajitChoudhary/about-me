@@ -1,11 +1,9 @@
-import {Introduction} from "./pages/Introduction"
-import { Timeline } from "./pages/Timeline"
+import SinglePage from "./pages/singlePage";
 
 function App() {
   return (
     <div>
-        <Introduction />
-        <div style={{width:"90vw",height:"100vh"}}><Timeline /></div>
+        <SinglePage />
     </div>
   );
 }
