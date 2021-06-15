@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ListIcon from "@material-ui/icons/List";
+import ExploreIcon from "@material-ui/icons/Explore";
 import scrollIdentifier from "../utils/scrollIdentifier";
 import "../styles/navbar.css";
 
@@ -20,20 +20,20 @@ function StickyNav(props) {
 
   return (
     <div
-      style={{ display: displayNav ? "inline" : "none" }}
+      style={{ display: displayNav ? "inline" : "none" , zIndex: 100 }}
       className="nav-container"
     >
       {/* <ListIcon /> */}
 
       <div
         id="circularMenu1"
-        class={`${
+        className={`${
           toggleActive ? "active" : ""
         } circular-menu circular-menu-left`}
       >
-        <span className="floating-btn" onClick={onActiveToggle}>
-          <ListIcon color="primary"  class="iconSize" />
-        </span>
+        <a className="floating-btn" onClick={onActiveToggle}>
+          <ExploreIcon color="primary" class="iconSize" />
+        </a>
 
         <menu className="items-wrapper">
           <a href="#" className="menu-item fa fa-home"></a>

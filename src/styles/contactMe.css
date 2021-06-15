@@ -1,4 +1,5 @@
 .contactMeContainer {
+  /* margin: 100px 100px 0 100px; */
   margin: 100px;
   display: flex;
   flex-grow: 1;
@@ -125,6 +126,7 @@
   background-color: #aaa0ff;
   color: #fff;
   border-bottom: 4px solid #aaa0ff;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 .button:hover:before {
   transform: skewX(-45deg) translateX(13.5em);

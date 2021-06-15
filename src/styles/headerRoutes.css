@@ -20,6 +20,10 @@
   position: relative;
 }
 
+.list-item a {
+  cursor: url("../assets/cursor-link.png"), auto;
+}
+
 .list-item::after {
   position: absolute;
   content: "";
@@ -32,9 +36,8 @@
 }
 
 .list-item:hover::after {
-  cursor: url("../assets/cursor-link.png"), auto;
-  width: 100%;
-  left: 0;
+  width: 106%;
+  left: -2.9%;
 }
 
 .list-item a {

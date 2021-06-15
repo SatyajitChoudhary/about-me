@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Typewriter from "./common/typewritter";
 import SocialMedia from "./socialmedia";
+import PeronalInfo from "./personalInfo";
 
 import "../styles/contactMe.css";
 
-export const FormInput = ({ title, onChange, value, type, placeholder }) => {
+const FormInput = ({ title, onChange, value, type, placeholder }) => {
   const onChangeEvent = (e) => {
     onChange(e.target.value);
   };
@@ -56,8 +57,8 @@ const ContactForm = () => {
         type="textarea"
         onChange={setdesc}
       />
-      <div class="wrapper">
-        <a href="#" class="button">
+      <div className="wrapper">
+        <a href="#" className="button">
           Send Me
         </a>
       </div>
@@ -73,6 +74,7 @@ const ContactMe = () => {
       <div style={{display: "flex", flexDirection: 'row'}}>
         <SocialMedia />
         <ContactForm />
+        <PeronalInfo />
       </div>
     </div>
   );

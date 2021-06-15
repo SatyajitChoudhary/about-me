@@ -8,31 +8,21 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 const SocialMedia = () => {
   return (
-    <div class="social-btns">
-      <a class="btn facebook" href="#">
-        {/* <i class="fa fa-facebook"> */}
+    <div className="social-btns">
+      <a className="btn facebook" href="#">
         <FacebookIcon class="fa fa-facebook" />
-        {/* </i> */}
       </a>
-      <a class="btn instagram" href="#">
-        {/* <i class="fa fa-instagram"> */}
+      <a className="btn instagram" href="#">
         <InstagramIcon class="fa fa-instagram" />
-        {/* </i> */}
       </a>
-      <a class="btn github" href="#">
-        {/* <i class="fa fa-github"> */}
+      <a className="btn github" href="#">
         <GitHubIcon class="fa fa-github" />
-        {/* </i> */}
       </a>
-      <a class="btn linkedin" href="#">
-        {/* <i class="fa fa-linkedin"> */}
+      <a className="btn linkedin" href="#">
         <LinkedInIcon class="fa fa-linkedin" />
-        {/* </i> */}
       </a>
-      <a class="btn whatsapp" href="#">
-        {/* <i class="fa fa-whatsapp"> */}
+      <a className="btn whatsapp" href="#">
         <WhatsAppIcon class="fa fa-whatsapp" />
-        {/* </i> */}
       </a>
     </div>
   );

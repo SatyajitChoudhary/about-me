@@ -10,6 +10,7 @@ import ScrollButton from "../components/scrollToTop";
 import DownloadResume from "../components/downloadCV";
 import { HeaderBg, FooterBg } from "../components/background";
 import ContactMe from "../components/contactMe";
+import DesignedByMe from "../components/designedbyMe";
 
 import "../styles/common.css";
 
@@ -18,32 +19,19 @@ class SinglePage extends Component {
     return (
       <div>
         <StickyNav />
-        {/* <section> */}
         <HeaderBg />
         <HeaderRoutes />
         <IntroPic />
         <IntroText />
-        {/* </section> */}
-        {/* <section id="roadmap"> */}
         <RoadMap />
-        {/* </section>
-        <section> */}
-        <DownloadResume />
-        {/* </section>
-        <section> */}
         <Skills />
-        {/* </section>
-        <section> */}
-        {/* <Projects /> */}
-        {/* </section> */}
         <ScrollButton />
-        {/* <section> */}
         <ContactMe />
-        {/* <SocialMedia /> */}
-        {/* </section>
-        <section> */}
+        <div style={{ position: "relative" }}>
+          <DownloadResume />
+          <DesignedByMe />
+        </div>
         <FooterBg />
-        {/* </section> */}
       </div>
     );
   }

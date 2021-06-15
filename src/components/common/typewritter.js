@@ -1,5 +1,6 @@
+import "../../styles/common.css";
+
 import React, { useRef, useEffect } from "react";
-import "../../styles/typewriter.css";
 
 const Typewriter = ({ text }) => {
   const typewriterRef = useRef(null);
@@ -9,7 +10,7 @@ const Typewriter = ({ text }) => {
 
   function typingEffect() {
     let word = words[i].split("");
-    var loopTyping = function () {
+    const loopTyping = () => {
       if (word.length > 0) {
         typewriterRef.current.innerHTML += word.shift();
       } else {
@@ -23,7 +24,7 @@ const Typewriter = ({ text }) => {
 
   function deletingEffect() {
     let word = words[i].split("");
-    var loopDeleting = function () {
+    const loopDeleting = () => {
       if (word.length > 0) {
         word.pop();
         typewriterRef.current.innerHTML = word.join("");
@@ -36,14 +37,14 @@ const Typewriter = ({ text }) => {
         typingEffect();
         return false;
       }
-      timer = setTimeout(loopDeleting, 200);
+      timer = setTimeout(loopDeleting, 110);
     };
     loopDeleting();
   }
 
   useEffect(() => {
     typingEffect();
-  }, []);
+  });
 
   return (
     <div id="typewriter">

@@ -54,7 +54,7 @@
 }
 
 .timeline ul li:nth-child(even) .pointContainer {
-  right: 4%;
+  right: 3.5%;
 }
 
 .pointIcon {
@@ -83,14 +83,19 @@
 .timeline ul li:nth-child(even) .container {
   flex-direction: row-reverse;
 }
-/* /// Card Styles /// */
+
+/* -------------------------------------------------------------------------- */
+/*                                 Card Styles                                */
+/* -------------------------------------------------------------------------- */
+
 .timeline .card {
   width: 20rem;
   padding: 0px 20px;
   box-sizing: border-box;
-  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background-color: rgba(170, 160, 255, 0.5);
+  background-color: white;
 }
 
 .timeline .card:hover {
@@ -98,8 +103,9 @@
 }
 
 .timeline .card .title {
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: bold;
+  color: #3a3a3a;
   margin: 5px 0px 0px;
 }
 
@@ -108,6 +114,7 @@
   font-weight: 500;
   margin: 0px 0px 2px;
   font-style: italic;
+  color: #aaa0ff;
 }
 
 .timeline .card .desc {
@@ -127,7 +134,7 @@
 /*                                 Responsive                                 */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .pointContainer {
     min-width: 15px;
     height: 15px;
@@ -160,4 +167,4 @@
   p {
     padding: 10px !important;
   }
-}
+} */
