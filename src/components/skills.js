@@ -8,6 +8,7 @@ import HtmlLogo from "../assets/html-5.svg";
 import CssLogo from "../assets/css-3.svg";
 import LinuxLogo from "../assets/linux-tux.svg";
 import GitIcon from "../assets/git-icon.svg";
+import JavaIcon from "../assets/java-icon.svg";
 import "../styles/skills.css";
 import { mySkills } from "../utils/config";
 import Typewriter from "./common/typewritter";
@@ -22,6 +23,7 @@ const keysToSVG = {
   CssLogo: CssLogo,
   LinuxLogo: LinuxLogo,
   GitIcon: GitIcon,
+  JavaIcon : JavaIcon
 };
 
 const RenderItem = ({ props }) => {

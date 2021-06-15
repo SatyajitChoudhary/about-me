@@ -43,13 +43,7 @@ const PeronalInfo = () => {
       </div>
       <div className="pInfoGMapContainer">
         {/* <SimpleMap /> */}
-        <iframe
-          src={mapURI}
-          height="300px"
-          width="250px"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+        <iframe  src={mapURI} className="mapStyle" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   );

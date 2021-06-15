@@ -6,52 +6,53 @@ export const downloadResumeConfig = {
 
 export const mySkills = [
   {
-    title: "React JS",
+    title: "React.js",
     src: "ReactLogo",
-    description: "Front end library for live UI",
+    description:
+      "Front-end library for building web user interfaces.",
   },
   {
     title: "React Native",
     src: "ReactLogo",
     description:
-      " JavaScript framework for writing real, natively rendering mobile applications for iOS and Android",
+      "Native Mobile framework to develop applications for Android, iOS, Windows.",
   },
   {
-    title: "Node JS",
+    title: "Node.js",
     src: "NodeLogo",
     description:
-      "open-source, cross-platform, back-end JavaScript runtime environment",
+      "Javascript runtime environment for building fast, scalable network apps.",
+  },
+  {
+    title: "Java",
+    src: "JavaIcon",
+    description: "Powerful general-purpose programming language.",
   },
   {
     title: "Redux",
     src: "ReduxLogo",
     description:
-      "JavaScript library for managing application state in front end",
+      "Predictable state container for JavaScript apps.",
   },
+  {
+    title: "Linux",
+    src: "LinuxLogo",
+    description:
+      "Operating system connecting computer hardware & software.",
+  },
+  { title: "HTML", src: "HtmlLogo", description: "Backbone of webpages." },
+  { title: "CSS", src: "CssLogo", description: "Paint brush of webpages." },
   {
     title: "Material UI",
     src: "MaterialUILogo",
     description:
-      "features React components that implement Google's Material Design",
+      "Customizable component library to build UI efficiently.",
   },
   {
     title: "Swagger",
     src: "SwaggerLogo",
     description:
-      "An Interface Description Language for describing RESTful APIs expressed using JSON.",
-  },
-  { title: "HTML", src: "HtmlLogo", description: "Backbone of webpages" },
-  { title: "CSS", src: "CssLogo", description: "Paint brush of webpages" },
-  {
-    title: "Linux",
-    src: "LinuxLogo",
-    description:
-      "a family of open-source Unix-like operating systems based on the Linux kernel",
-  },
-  {
-    title: "Git",
-    src: "GitIcon",
-    description: "open source distributed version control system ",
+      "An Interface Description Language for describing RESTful APIs.",
   },
 ];
 

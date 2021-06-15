@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/introPic.css";
-import logo from "../assets/myphoto.jpg"
+import logo from "../assets/satya.jpg"
 function IntroPic(props) {
   return (
     <div className="image-conatainer">

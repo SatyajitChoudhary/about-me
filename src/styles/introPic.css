@@ -11,6 +11,7 @@
   border: 5px solid white;
   border-radius: 150px;
   transition: 0.4s;
+  object-fit: cover;
 }
 
 .myPic:hover {
