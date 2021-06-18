@@ -35,7 +35,7 @@ const ContactForm = () => {
   const [contact, setcontact] = useState("");
   const [desc, setdesc] = useState("");
   return (
-    <div className="formContainer">
+    <div data-aos="slide-right" className="formContainer">
       <div className="nameContainer">
         <FormInput
           title="Your Name"

@@ -9,6 +9,7 @@ import CssLogo from "../assets/css-3.svg";
 import LinuxLogo from "../assets/linux-tux.svg";
 import GitIcon from "../assets/git-icon.svg";
 import JavaIcon from "../assets/java-icon.svg";
+import JsLogo from "../assets/javascript.svg";
 import "../styles/skills.css";
 import { mySkills } from "../utils/config";
 import Typewriter from "./common/typewritter";
@@ -23,14 +24,20 @@ const keysToSVG = {
   CssLogo: CssLogo,
   LinuxLogo: LinuxLogo,
   GitIcon: GitIcon,
-  JavaIcon : JavaIcon
+  JavaIcon: JavaIcon,
+  JsLogo: JsLogo,
 };
 
-const RenderItem = ({ props }) => {
-  const { title, src, description } = props;
-
+const RenderItem = (props) => {
+  const { item  : {title, src, description } , index } = props;
+  const aosStyle =
+    (index + 1) % 2 === 0
+      ? "fade-down"
+      : (index + 1) % 3 === 0
+      ? "fade-left"
+      : "fade-right";
   return (
-    <div className="skillBox">
+    <div data-aos={aosStyle} className="card2">
       <div className="skillIconBall">
         <img className="skillSVG" alt={title} src={keysToSVG[src]} />
       </div>
@@ -44,11 +51,11 @@ const RenderItem = ({ props }) => {
 
 const Skills = () => {
   return (
-    <div id='skills' className="skillsContainer">
+    <div id="skills" className="skillsContainer">
       <Typewriter text={["Checkout my Skills..."]} />
       <div className="showSkill">
-        {mySkills.map((item) => (
-          <RenderItem key={item.title} props={item} />
+        {mySkills.map((item, index) => (
+          <RenderItem key={item.title} item={item} index={index} />
         ))}
       </div>
     </div>

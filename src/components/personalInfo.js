@@ -35,15 +35,15 @@ const RenderInfoCard = ({ title, value }) => {
 
 const PeronalInfo = () => {
   return (
-    <div className="pInfoContainer">
+    <div data-aos="slide-left" className="pInfoContainer">
       <div className="pInfoDetails">
         {myPersonalInfo.map((item) => (
-          <RenderInfoCard {...item} />
+          <RenderInfoCard key={item.title} {...item} />
         ))}
       </div>
       <div className="pInfoGMapContainer">
         {/* <SimpleMap /> */}
-        <iframe  src={mapURI} className="mapStyle" allowfullscreen="" loading="lazy"></iframe>
+        <iframe  src={mapURI} className="mapStyle" allowFullScreen="" loading="lazy"></iframe>
       </div>
     </div>
   );
