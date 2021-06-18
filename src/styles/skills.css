@@ -14,13 +14,16 @@
 }
 
 .skillBox {
+  /* background-color: #fafaff;
+  border: 1px solid #efedfe; */
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
   width: 30%;
   height: 100px;
-  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2); */
   overflow: hidden;
   padding: 10px;
   margin: 10px;
@@ -56,5 +59,58 @@
 }
 
 .SkillDescText {
-    color: slategray;
+  color: #1a1a1a;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  On Hover                                  */
+/* -------------------------------------------------------------------------- */
+
+.card2 {
+  width: 30%;
+  height: 100px;
+  display: block;
+  top: 0px;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  /* padding: 32px 24px; */
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+}
+.card2:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+.card2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #00838d;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+.card2:hover:before {
+  transform: scale(2.15);
+}
+.card2:hover .skillIconBall {
+  position: absolute;
+}
+.card2:hover .SkillDesc {
+  width: 15rem;
+  position: absolute;
+  top: 17px;
+  right: 11px;
 }

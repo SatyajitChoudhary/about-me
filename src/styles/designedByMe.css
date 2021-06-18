@@ -10,7 +10,7 @@
   border-radius: 50%;
   overflow: hidden;
   padding-left: 120px;
-  filter: drop-shadow(2px 1px 0 white) drop-shadow(-2px -1px 0 white);
+  filter: drop-shadow(2px 1px 0 white) drop-shadow(-2px -1px 0 white) brightness(100);
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
@@ -20,6 +20,7 @@
 .myLogo:hover {
   /* cursor: url("../assets/cursor-link.png"), auto; */
   animation-name: bounce;
+  filter: drop-shadow(2px 1px 0 white) drop-shadow(-2px -1px 0 white) brightness(1);
 }
 
 @keyframes bounce {

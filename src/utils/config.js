@@ -1,7 +1,7 @@
 export const downloadResumeConfig = {
   fileName: "cv.pdf",
   fileLink:
-    "https://drive.google.com/uc?export=download&id=1kjqseWcyDFxluUQKq46Hfonj1hc5B_Mo",
+    "https://drive.google.com/uc?export=download&id=1RpSsgI4GhX2JfsXU0ZIWJSsJoBalSPsc",
 };
 
 export const mySkills = [
@@ -15,13 +15,13 @@ export const mySkills = [
     title: "React Native",
     src: "ReactLogo",
     description:
-      "Native Mobile framework to develop applications for Android, iOS, Windows.",
+      "Native Mobile framework for Android, iOS.",
   },
   {
     title: "Node.js",
     src: "NodeLogo",
     description:
-      "Javascript runtime environment for building fast, scalable network apps.",
+      "Runtime JS environment for building network apps.",
   },
   {
     title: "Java",
@@ -43,6 +43,11 @@ export const mySkills = [
   { title: "HTML", src: "HtmlLogo", description: "Backbone of webpages." },
   { title: "CSS", src: "CssLogo", description: "Paint brush of webpages." },
   {
+    title: "Javascript",
+    src: "JsLogo",
+    description: "Scripting language that enables interaction in webpages.",
+  },
+  {
     title: "Material UI",
     src: "MaterialUILogo",
     description:
@@ -52,7 +57,7 @@ export const mySkills = [
     title: "Swagger",
     src: "SwaggerLogo",
     description:
-      "An Interface Description Language for describing RESTful APIs.",
+      "Interface description language for describing RESTful APIs.",
   },
 ];
 

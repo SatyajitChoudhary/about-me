@@ -43,7 +43,7 @@ const ScrollButton = () => {
   );
 
   return (
-    <div style={{ position: "fixed", float: "right", right: 10, bottom: 0 }}>
+    <div style={{zIndex: 100, position: "fixed", float: "right", right: 10, bottom: 0 }}>
       <div
         onMouseEnter={() => setchangeComponent(true)}
         onMouseLeave={() => setchangeComponent(false)}

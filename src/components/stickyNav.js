@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import ExploreIcon from "@material-ui/icons/Explore";
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import scrollIdentifier from "../utils/scrollIdentifier";
+import HomeIcon from "@material-ui/icons/Home";
+import AirplanemodeActiveIcon from "@material-ui/icons/AirplanemodeActive";
+import ForumIcon from "@material-ui/icons/Forum";
+import SettingsEthernetIcon from "@material-ui/icons/SettingsEthernet";
+import AttachFileIcon from "@material-ui/icons/AttachFile";
 import "../styles/navbar.css";
 
-function StickyNav(props) {
+function StickyNav() {
   const [displayNav, setdisplayNav] = useState(false);
   const [toggleActive, setToggleActive] = useState(false);
 
@@ -20,11 +26,9 @@ function StickyNav(props) {
 
   return (
     <div
-      style={{ display: displayNav ? "inline" : "none" , zIndex: 100 }}
+      style={{ display: displayNav ? "inline" : "none", zIndex: 100 }}
       className="nav-container"
     >
-      {/* <ListIcon /> */}
-
       <div
         id="circularMenu1"
         className={`${
@@ -32,16 +36,26 @@ function StickyNav(props) {
         } circular-menu circular-menu-left`}
       >
         <a className="floating-btn" onClick={onActiveToggle}>
-          <ExploreIcon color="primary" class="iconSize" />
+       { toggleActive ? <CloseIcon class="iconSize" /> : <MenuIcon class="iconSize" />}
         </a>
 
         <menu className="items-wrapper">
-          <a href="#" className="menu-item fa fa-home"></a>
-          <a href="#" className="menu-item fa fa-user"></a>
-          <a href="#" className="menu-item fa fa-pie-chart"></a>
-          <a href="#" className="menu-item fa fa-cog"></a>
-          <a href="#" className="menu-item fa fa-pie-chart"></a>
-          <a href="#" className="menu-item fa fa-cog"></a>
+          <a href="#" className="menu-item fa fa-home">
+            <HomeIcon fontSize="large" />
+          </a>
+          <a href="#journey" className="menu-item fa fa-user">
+            <AirplanemodeActiveIcon fontSize="large" />
+          </a>
+          <a href="#skills" className="menu-item fa fa-pie-chart">
+            <SettingsEthernetIcon fontSize="large" />
+          </a>
+          <a href="#ContactMe" className="menu-item fa fa-cog">
+            <ForumIcon fontSize="large" />
+          </a>
+          <a href="#resume" className="menu-item fa fa-pie-chart">
+            <AttachFileIcon fontSize="large" />
+          </a>
+          {/* <a href="#" className="menu-item fa fa-cog"></a> */}
         </menu>
       </div>
     </div>

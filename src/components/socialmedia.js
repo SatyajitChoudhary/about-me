@@ -8,7 +8,7 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 const SocialMedia = () => {
   return (
-    <div className="social-btns">
+    <div data-aos="slide-right" className="social-btns">
       <a className="btn facebook" href="#">
         <FacebookIcon class="fa fa-facebook" />
       </a>
