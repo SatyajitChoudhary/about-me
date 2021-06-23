@@ -59,8 +59,9 @@
 .showMoreInfoBox {
 }
 
-.showMoreInfoBox span {
+.showInfoBox a {
   display: block;
+  cursor: url("../assets/cursor-link.png"), auto;
 }
 
 .showMoreInfoBox #title {

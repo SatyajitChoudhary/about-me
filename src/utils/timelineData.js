@@ -1,3 +1,22 @@
+let DevOpsDescription = (
+  <>
+    <div>
+      Worked in Scan & Go , Newsflash , Receiving application of ASDA (an UK
+      retail enterprise of Walmart)
+    </div>
+    <ul>
+      <li>
+        Responsibly deployed and maintained couple of cloud based applications
+        of ASDA in production environment.
+      </li>
+      <li>
+        Being the SPOC of Newsflash application , sole-handedly maintained it's
+        productionstability. Ensured stability of multiple retail applications
+        including customer facingScan & Go application in a 10 player's team.
+      </li>
+    </ul>
+  </>
+);
 export const timelineData = [
   {
     title: "Birth",
@@ -29,14 +48,14 @@ export const timelineData = [
     icon: "work",
   },
   {
-    title: "DevOps",
-    description: "ASDA (Walmart parent)",
+    title: "DevOps Engineer - ASDA",
+    description: DevOpsDescription,
     date: "August 2019 - Febuary 2020",
     icon: "work",
   },
   {
-    title: "React Developer",
-    description: "ASDA (Walmart parent)",
+    title: "Full Stack Developer - ASDA",
+    description: DevOpsDescription,
     date: "March 2020 - Present",
     icon: "work",
   },

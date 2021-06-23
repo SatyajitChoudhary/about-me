@@ -13,7 +13,7 @@ const iconMap = {
   Location: LocationOnIcon,
 };
 
-const RenderIcon = ({ icon }) => {
+const RenderIcon = ({ icon,link }) => {
   if (typeof iconMap[icon] !== "undefined") {
     return React.createElement(iconMap[icon], {
       className: "iamIcon",
@@ -21,13 +21,13 @@ const RenderIcon = ({ icon }) => {
   }
 };
 
-const RenderInfoCard = ({ title, value }) => {
+const RenderInfoCard = ({ title, value,link }) => {
   return (
     <div className="showInfoBox">
-      <RenderIcon icon={title} />
+      <a href={link}><RenderIcon icon={title} link={link}/></a>
       <div className="showMoreInfoBox">
-        <span id="title">{title}</span>
-        <span id="value">{value}</span>
+        <a href={link} id="title">{title}</a>
+        <a href={link} id="value">{value}</a>
       </div>
     </div>
   );
@@ -41,7 +41,7 @@ const PeronalInfo = () => {
           <RenderInfoCard key={item.title} {...item} />
         ))}
       </div>
-      <div className="pInfoGMapContainer">
+      <div className="pInfoGMapContainer" id="locationMap">
         {/* <SimpleMap /> */}
         <iframe  src={mapURI} className="mapStyle" allowFullScreen="" loading="lazy"></iframe>
       </div>
