@@ -17,6 +17,22 @@ let DevOpsDescription = (
     </ul>
   </>
 );
+
+let DevDescriptionTCS = (
+  <>
+    <div>
+      Worked on React,Node stack building TMS application
+    </div>
+    <ul>
+      <li>
+      Trade my store (TMS) is an internal web and mobile application of ASDA which is used by store colleagues to order products in bulk.
+      </li>
+      <li>
+      Worked on SSA role functionalities end to end including bulk upload / single add item restrictions, approving/rejecting/amending orders, adding/modifying store department - division restrictions, downloading restrictions/approved orders in csv.
+      </li>
+    </ul>
+  </>
+);
 export const timelineData = [
   {
     title: "Birth",
@@ -55,7 +71,7 @@ export const timelineData = [
   },
   {
     title: "Full Stack Developer - ASDA",
-    description: DevOpsDescription,
+    description: DevDescriptionTCS,
     date: "March 2020 - Present",
     icon: "work",
   },
