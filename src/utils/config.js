@@ -71,10 +71,18 @@ export const myRoutes = [
 ];
 
 export const myPersonalInfo = [
-  { title: "Email", value: "satyajitchoudhary09@gmail.com" },
-  { title: "Call", value: "+91 8981526351" },
-  { title: "Location", value: "Kolkata, West Bengal, India" },
+  { title: "Email", value: "satyajitchoudhary09@gmail.com",link: "mailto:satyajitchoudhary09@gmail.com" },
+  { title: "Call", value: "+91 8981526351",link:"tel:+918981526351" },
+  { title: "Location", value: "Kolkata, West Bengal, India" , link:"#locationMap" },
 ];
 
 export const mapURI =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14729.254649664099!2d88.36685372539577!3d22.642091066330625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89db1b59942e9%3A0xf47e70d981ac209!2sBaranagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1623745525417!5m2!1sen!2sin";
+
+export const socialMediaLinks = {
+  instagram: "#",
+  facebook: "https://www.facebook.com/satyajit.chaudhary.92/",
+  linkedIn: "https://www.linkedin.com/in/satyajitchoudhary/",
+  github: "https://github.com/SatyajitChoudhary",
+  whatsapp: "https://api.whatsapp.com/send?phone=918981526351&text=Hi%20Satyajit%20!%20Interested%20in%20your%20portfolio%20website."
+}

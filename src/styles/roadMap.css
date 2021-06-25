@@ -16,19 +16,19 @@
   content: "";
   position: absolute;
   top: 55px;
-  height: 89%;
+  height: 90%;
   width: 2px;
   left: 50%;
   background-color: #aaa0ff;
 }
 
-.timeline ul {
+.timeline>ul {
   margin: 0px;
   padding: 0px;
 }
 
 /* center pointing */
-.timeline ul li {
+.timeline>ul>li {
   margin-bottom: 50px;
   list-style-type: none;
   display: flex;
@@ -49,11 +49,11 @@
 }
 
 /* icons center alignment */
-.timeline ul li:nth-child(odd) .pointContainer {
+.timeline>ul>li:nth-child(odd) .pointContainer {
   left: 4%;
 }
 
-.timeline ul li:nth-child(even) .pointContainer {
+.timeline>ul>li:nth-child(even) .pointContainer {
   right: 3.5%;
 }
 
@@ -64,7 +64,7 @@
 }
 
 /* align with middle line */
-.timeline ul li .content {
+.timeline>ul>li .content {
   width: 50%;
   padding: 0 20px;
 }
@@ -76,11 +76,11 @@
   align-items: center;
 }
 
-.timeline ul li:nth-child(odd) .container {
+.timeline>ul>li:nth-child(odd) .container {
   flex-direction: row;
 }
 
-.timeline ul li:nth-child(even) .container {
+.timeline>ul>li:nth-child(even) .container {
   flex-direction: row-reverse;
 }
 
@@ -89,7 +89,8 @@
 /* -------------------------------------------------------------------------- */
 
 .timeline .card {
-  width: 20rem;
+  width: max-content;
+  max-width: 30rem;
   padding: 0px 20px;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -122,12 +123,25 @@
   margin: 0px 0px 10px;
 }
 
-.timeline ul li:nth-child(even) {
+.timeline>ul>li:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.timeline ul li:nth-child(odd) {
+.timeline>ul>li:nth-child(odd) {
   text-align: end;
+}
+
+.desc div {
+  padding: 5px 0px;
+  text-align: left;
+}
+.desc ul {
+  list-style: disc outside;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.desc ul li {
+  padding: 0.5rem;
 }
 
 /* -------------------------------------------------------------------------- */

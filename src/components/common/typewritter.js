@@ -17,7 +17,7 @@ const Typewriter = ({ text }) => {
         deletingEffect();
         return false;
       }
-      timer = setTimeout(loopTyping, 300);
+      timer = setTimeout(loopTyping, 250);
     };
     loopTyping();
   }
@@ -37,7 +37,7 @@ const Typewriter = ({ text }) => {
         typingEffect();
         return false;
       }
-      timer = setTimeout(loopDeleting, 110);
+      timer = setTimeout(loopDeleting, 150);
     };
     loopDeleting();
   }

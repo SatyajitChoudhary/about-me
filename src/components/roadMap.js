@@ -33,7 +33,7 @@ const PrimaryCard = ({ te, idx }) => {
         >
           <p className="title">{te.title}</p>
           <p className="date">{te.date}</p>
-          <p className="desc">{te.description}</p>
+          <div className="desc">{te.description}</div>
         </div>
         <div className="pointContainer">
           <RenderIcon props={te} />
