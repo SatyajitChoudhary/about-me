@@ -11,8 +11,8 @@ let DevOpsDescription = (
       </li>
       <li>
         Being the SPOC of Newsflash application , sole-handedly maintained it's
-        productionstability. Ensured stability of multiple retail applications
-        including customer facingScan & Go application in a 10 player's team.
+        production stability. Ensured stability of multiple retail applications
+        including customer facing Scan & Go application in a 10 player's team.
       </li>
     </ul>
   </>
@@ -21,7 +21,7 @@ let DevOpsDescription = (
 let DevDescriptionTCS = (
   <>
     <div>
-      Worked on React,Node stack building TMS application
+      Worked on React, React Native, Node stack building TMS application
     </div>
     <ul>
       <li>
@@ -66,13 +66,13 @@ export const timelineData = [
   {
     title: "DevOps Engineer - ASDA",
     description: DevOpsDescription,
-    date: "August 2019 - Febuary 2020",
+    date: "August 2019 - April 2020",
     icon: "work",
   },
   {
     title: "Full Stack Developer - ASDA",
     description: DevDescriptionTCS,
-    date: "March 2020 - Present",
+    date: "April 2020 - Present",
     icon: "work",
   },
 ];
