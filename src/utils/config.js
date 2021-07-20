@@ -33,8 +33,8 @@ export const mySkills = [{
         src: "LinuxLogo",
         description: "Operating system connecting computer hardware & software.",
     },
-    { title: "HTML", src: "HtmlLogo", description: "Backbone of webpages." },
-    { title: "CSS", src: "CssLogo", description: "Paint brush of webpages." },
+    { title: "HTML", src: "HtmlLogo", description: "Standard markup language for defining structure of a web pages." },
+    { title: "CSS", src: "CssLogo", description: "Style sheet language for designing webpages." },
     {
         title: "Javascript",
         src: "JsLogo",
